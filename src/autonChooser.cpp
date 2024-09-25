@@ -1,13 +1,13 @@
 #include "main.h"
 
 int convert_bit(int input){
-    if(input == 92){
+    if(input & LCD_BTN_LEFT){
         return -1;
     }
-    else if(input == 90){
+    else if(input & LCD_BTN_CENTER){
         return 100;
     }
-    else if(input == 89){
+    else if(input & LCD_BTN_RIGHT){
         return 1;
     }
     else return 0;
